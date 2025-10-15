@@ -1,0 +1,29 @@
+{
+  "name": "fix-ever-tech-server",
+  "private": true,
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "prisma:generate": "cross-env DATABASE_URL=file:./dev.db prisma generate",
+    "prisma:migrate": "cross-env DATABASE_URL=file:./dev.db prisma migrate dev --name init",
+    "prisma:studio": "cross-env DATABASE_URL=file:./dev.db prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "cross-env": "^7.0.3",
+    "prisma": "^5.22.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.8.3"
+  }
+}
