@@ -131,7 +131,7 @@ const Home = () => {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
               <Tilt className="max-w-[640px] mx-auto">
                 <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-background/40 backdrop-blur will-change-transform">
-                 <img src="/repair.jpg" alt="Device repair" className="w-full h-auto object-cover" />
+                 <img src="/logo.png" alt="Device repair" className="w-full h-auto object-cover" />
 
                 </div>
               </Tilt>
@@ -236,4 +236,5 @@ const Home = () => {
 }
 
 export default Home;
+
 
